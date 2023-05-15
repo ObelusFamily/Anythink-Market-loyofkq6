@@ -44,3 +44,4 @@ with engine.connect() as con:
         
         comment = {'body': f'comment{i}', 'seller_id':generated_usr_id, 'item_id': generated_item_id}
         con.execute(comment_insert, **comment)
+        #test
