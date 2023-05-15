@@ -1,6 +1,6 @@
 # imports
-from SQLAlchemy import create_engine
-from SQLAlchemy.sql import text 
+from sqlalchemy import create_engine
+from sqlalchemy.sql import text 
 import os
 import string 
 import random 
