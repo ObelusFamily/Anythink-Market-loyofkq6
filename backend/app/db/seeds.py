@@ -28,7 +28,7 @@ comment_insert = text("""INSERT INTO comments(body, seller_id, item_id)VALUES(:b
 with engine.connect() as con: 
     for i in range(100):
         rnd_username = f'user{i}'
-        user = {'username': rnd_username, 'email':{rnd_username}@mail.com, 'salt': 'abc', 'bio': 'bio', 'hashed_password': '12345689'}
+        user = {'username': rnd_username, 'email':f'{rnd_username}@mail.com', 'salt': 'abc', 'bio': 'bio', 'hashed_password': '12345689'}
         con.execute(usr_insert, **user)
 
         result = con.execute(last_usr_id)
